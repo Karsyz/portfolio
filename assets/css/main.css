@@ -1,12 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
-/*
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -111,7 +105,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #1c2421;
 		text-decoration: none;
 	}
 
@@ -131,14 +125,14 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 0.8em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #313131;
+		color: #787878;
 		font-weight: 400;
 		line-height: 1em;
-		margin: 0 0 1em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -152,17 +146,17 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 2em;
 		line-height: 1.5em;
 	}
 
 	h3 {
-		font-size: 1.25em;
+		font-size: 1.1em;
 		line-height: 1.5em;
 	}
 
 	h4 {
-		font-size: 1.1em;
+		font-size: 1.0em;
 		line-height: 1.5em;
 	}
 
@@ -1771,7 +1765,7 @@ input, select, textarea {
 	}
 
 	header h2 + p {
-		font-size: 1.25em;
+		font-size: 1.5em;
 		margin-top: -1em;
 		line-height: 1.5em;
 	}
@@ -2049,7 +2043,6 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
 			border-radius: 0.35em;
 			content: '';
 			display: block;
@@ -2094,7 +2087,6 @@ input, select, textarea {
 			}
 
 			.image.thumb:hover:before {
-				background: url("images/overlay.png"), url("images/overlay.png");
 				opacity: 1.0;
 			}
 
@@ -2146,6 +2138,10 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.border {
+			border: 1px solid black;
+		}
+
 /* List */
 
 	ol {
@@ -2193,6 +2189,7 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		margin: 0'
 	}
 
 		ul.icons li {
@@ -2562,14 +2559,18 @@ input, select, textarea {
 		}
 
 		.work-item h3 {
-			font-size: 1em;
-			margin: 0 0 0.5em 0;
+			font-size: 1.5em;
+			margin: 0;
 		}
 
 		.work-item p {
-			font-size: 0.8em;
+			font-size: 1em;
 			line-height: 1.5em;
 			margin: 0;
+		}
+
+		.work-item > span {
+			color: black;
 		}
 
 /* Header */
@@ -2593,14 +2594,11 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #4c7ad6;
 		background-attachment: scroll, scroll;
-		background-image:  url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
 		background-size: auto,								auto;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em;
+		padding: 4em 4em;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -2655,7 +2653,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 16.25em;
+			width: 85%;
 		}
 
 /* Footer */
@@ -2699,14 +2697,14 @@ input, select, textarea {
 	#main {
 		margin-left: 35%;
 		max-width: 54em;
-		padding: 8em 4em 4em 4em;
+		padding: 3em 4em 4em 4em;
 		width: calc(100% - 35%);
 	}
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 1em 0 0 0;
+			padding: 1em 0 0 0;
 		}
 
 			#main > section:first-child {
@@ -3087,13 +3085,16 @@ input, select, textarea {
 					#header h1 br {
 						display: inline;
 					}
+					
+			#header .image.avatar {
+				width: 16.25em;
+			}		
 
 		/* Footer */
 
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
@@ -3223,6 +3224,10 @@ input, select, textarea {
 				#header h1 br {
 					display: none;
 				}
+			
+				#header .image.avatar {
+					width: 85%;
+				}
 
 				
 
@@ -3238,4 +3243,8 @@ input, select, textarea {
 
 
 
+	}
+
+	.cardIconsCont {
+		margin: 10px 0 0 0;
 	}
