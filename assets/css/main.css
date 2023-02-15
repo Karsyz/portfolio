@@ -3260,3 +3260,7 @@ input, select, textarea {
 
 
 	}
+
+	.mb {
+		margin-bottom: 1em;
+	}
