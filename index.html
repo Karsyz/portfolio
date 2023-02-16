@@ -113,7 +113,7 @@
 				<p>I'm always on the look out for new, exciting, interesting, and impactful work. If you're in need of a front-end, a back-end, a full stack developer, or you just want to have a coffee chat, please reach out! I'd love to hear from you!</p>
 				<div class="row">
 					<div class="col-12">
-						<form name="contact" method="post" data-netlify="true" data-netlify-recaptcha="true" action="#">
+						<form name="contact" method="POST" data-netlify="true">
 							<div class="row gtr-uniform gtr-50 mb">
 								<div class="col-6 col-12-xsmall">
 									<input type="text" name="name" id="name" placeholder="Name"/>
@@ -126,10 +126,8 @@
 								</div>
 							</div>
 							<div data-netlify-recaptcha="true" class="captcha"></div>
+								<button class="button" type="submit" value="Send Message">Send Message</button>
 						</form>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" /></li>
-						</ul>
 					</div>
 				</div>
 			</section>
